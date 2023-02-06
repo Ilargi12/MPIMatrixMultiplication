@@ -11,7 +11,7 @@
 */
 
 // Number of rows and columnns in a matrix
-#define N 4
+#define N 512
 
 MPI_Status status;
 
