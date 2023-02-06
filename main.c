@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 {
   int processCount, processId, slaveTaskCount, source, dest, rows, offset;
 
-  int N = (int) argv[1];
+  long N = strtol(argv[1], NULL, 10);
 	
   double matrix_a[N][N],matrix_b[N][N],matrix_c[N][N];
 
