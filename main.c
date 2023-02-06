@@ -11,16 +11,17 @@
 */
 
 // Number of rows and columnns in a matrix
-#define N 512
 
 MPI_Status status;
-
-// Matrix holders are created
-double matrix_a[N][N],matrix_b[N][N],matrix_c[N][N];
 
 int main(int argc, char **argv)
 {
   int processCount, processId, slaveTaskCount, source, dest, rows, offset;
+	
+  int N = argv[1];
+	
+  // Matrix holders are created
+  double matrix_a[N][N],matrix_b[N][N],matrix_c[N][N];
 
   struct timeval start, stop;
 
